@@ -6,19 +6,16 @@ pkgdesc="Displays date and time (including an analogue clock) for the G15 keyboa
 arch=('i686')
 license=('Unknown')
 depends=('g15daemon-svn' 'libg15render-svn' 'libg15-svn')
-source=(https://dean36963@github.com/dean36963/g15date.git/$pkgname-$pkgver-$pkgrel.tar.gz)
-md5sums=('f7bf3d0d5dad1da672c64776543c2360')
+source=(https://github.com/downloads/dean36963/g15date/g15date-svn-0.2-1.tar.gz/$pkgname-$pkgver-$pkgrel.tar.gz)
+md5sums=('6518cc0fd5a518da2b066c6f4c71a5c2')
+
 
 
 build() {
-  mkdir "$srcdir/$pkgname-$pkgver"
-  cd "$srcdir/$pkgname-$pkgver"
+#  mkdir "$srcdir/$pkgname-$pkgver"
+ # cd "$srcdir/$pkgname-$pkgver"
+	cd "$srcdir"
   make
-}
-
-package() {
-  cd "$srcdir/$pkgname-$pkgver"
-  make install
 }
 
 
