@@ -6,7 +6,7 @@ void drawClock(g15canvas *canvas,struct tm *realtime,int *coords)
 	g15r_drawCircle(canvas,circle_x,circle_y,circle_r,0,G15_COLOR_BLACK);
 
 	//draw hour hand - get coordinates
-	theta = (double)realtime->tm_hour*(double)M_PI/6.0;
+	theta = (double)realtime->tm_hour*(double)M_PI/6.0 + (double)realtime->tm_min*M_PI/360.0;
 	x = circle_r*sin(theta)/2 + circle_x;
 	y = circle_y - circle_r*cos(theta)/2;
 	g15r_drawLine(canvas,circle_x,circle_y,x,y,G15_COLOR_BLACK);

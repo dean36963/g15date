@@ -1,4 +1,5 @@
 #Maintainer: Dean Birch <dean.birch0@gmail.com>
+#notetoself - $srcdir/pgk/usr/bin/g15date
 pkgname=g15date-svn
 pkgver=0.2
 pkgrel=1
