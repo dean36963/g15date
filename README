@@ -8,7 +8,14 @@ To install:
 
 		(as root)
 
+To uninstall:
+
+	make uninstall
+
+		(as root)
+
 Usage:
+
 	g15date
 		Displays time (digital) and date.
 	g15date -a
