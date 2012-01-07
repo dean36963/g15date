@@ -27,6 +27,9 @@ const int MAX_STR_LENGTH=256;
 const int DEFAULT_WAIT_TIME=1;
 const int FONT_WIDTH=6;
 
+//functions used by clock.c
+void drawClock(g15canvas *canvas,struct tm *realtime,int *coords);
+void calcDial(int *coords);
 
 int getDatestring(struct tm *realtime,char *string,int type);
 
