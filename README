@@ -1,0 +1,20 @@
+To build run:
+
+	make
+
+To install:
+
+	make install
+
+		(as root)
+
+Usage:
+	g15date
+		Displays time (digital) and date.
+	g15date -a
+		Displays time (analogue clock) and date.
+
+Version:
+	0.2 - Early development!
+
+Email dean.birch0@gmail.com with bugs, suggestions, or just let me know that someone is actually using this package!
