@@ -17,9 +17,13 @@ To uninstall:
 Usage:
 
 	g15date
-		Displays time (digital) and date.
-	g15date -a
 		Displays time (analogue clock) and date.
+	g15date -d
+		Displays time (digital) and date.
+
+-----
+NOTE:	The g15daemon must be running.
+-----
 
 Version:
 	0.2 - Early development!

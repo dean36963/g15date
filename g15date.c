@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	time_t rawtime;
 	struct tm *realtime;
 	char timestr[80];
-	int analogue=0;
+	int analogue=1;
 	int *dialCoords;
 
 
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 			printf("G15 date and time.\n");
 			printf("-h,--help    \tShows this help page.\n");
 			printf("-v,--version \tPrints version number.\n");
-			printf("-a,--analogue\tDisplay analogue clock.\n");
+			printf("-d,--digital\tDisplay a digital clock.\n");
 			printf("Send bug reports dean.birch0@gmail.com\n");
 			return 0;
 		}
@@ -67,10 +67,10 @@ int main(int argc, char *argv[])
 			printf("0.2\n");
 			return 0;
 		}
-		else if(0==strncmp(argv[i],"-a",2)||0==strncmp(argv[i],"--analogue",10))
+		else if(0==strncmp(argv[i],"-d",2)||0==strncmp(argv[i],"--digital",9))
 		{	//prints version number
-			printf("Using analogue clock.\n");
-			analogue=1;
+			printf("Using Digital Clock!\n");
+			analogue=0;
 		}
 	}
 
